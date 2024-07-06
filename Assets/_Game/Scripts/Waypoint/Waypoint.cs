@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-
     [SerializeField] private Vector3[] points;
 
     public Vector3[] Points => points;

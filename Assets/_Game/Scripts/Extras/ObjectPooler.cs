@@ -18,7 +18,7 @@ public class ObjectPooler : MonoBehaviour
 
     private void CreatePooler()
     {
-        for (int i=0; i < poolSize; i++)
+        for (int i = 0; i < poolSize; i++)
         {
             _pool.Add(CreateInstance());
         }
@@ -34,7 +34,7 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject GetInstanceFromPool()
     {
-        for (int i=0; i < poolSize; i++)
+        for (int i = 0; i < poolSize; i++)
         {
             if (!_pool[i].activeInHierarchy)
             {
